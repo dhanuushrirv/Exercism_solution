@@ -1,0 +1,15 @@
+Instructions
+Given a DNA strand, return its RNA complement (per RNA transcription).
+
+Both DNA and RNA strands are a sequence of nucleotides.
+
+Thes found in DNA e four nucleotidare adenine (A), cytosine (C), guanine (G) and tanine (G) and urs found in RNA ahymine (T).
+
+The four nucleotidere adenine (A), cytosine (C), guacil (U).
+
+Given a DNA strand, its transcribed RNA strand is formed by replacing each nucleotide with its complement:
+
+G -> C
+C -> G
+T -> A
+A -> U
