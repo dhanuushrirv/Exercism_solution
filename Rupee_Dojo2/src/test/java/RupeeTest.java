@@ -25,6 +25,13 @@ public class RupeeTest {
         Rupee tenRupee = new Rupee(10);
         Rupee anotherTenRupee = new Rupee(5);
 
-        assertNotEquals(tenRupee,anotherTenRupee);
+        assertNotEquals(tenRupee, anotherTenRupee);
+    }
+
+    @Test
+    void shouldNotBeEqualToNullWhenTenRupeesIsGiven() {
+        Rupee tenRupee = new Rupee(10);
+
+        assertNotEquals(tenRupee, null);
     }
 }

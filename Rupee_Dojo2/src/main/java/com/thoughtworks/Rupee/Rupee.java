@@ -1,6 +1,5 @@
 package com.thoughtworks.Rupee;
 
-import javax.management.relation.RelationSupport;
 
 public class Rupee {
     private final double value;
@@ -11,7 +10,9 @@ public class Rupee {
 
     @Override
     public boolean equals(Object obj) {
-
+        if (obj == null) {
+            return false;
+        }
         Rupee newValue = (Rupee) obj;
         return this.value == newValue.value;
     }
