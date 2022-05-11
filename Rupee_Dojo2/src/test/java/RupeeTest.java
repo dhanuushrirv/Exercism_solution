@@ -39,7 +39,16 @@ public class RupeeTest {
     void shouldNotBeEqualToTenRupeesWhenComparedWithDifferentObjects() {
         Rupee tenRupee = new Rupee(10);
 
-        assertNotEquals(tenRupee,Integer.valueOf(7));
+        assertNotEquals(tenRupee, Integer.valueOf(7));
     }
 
+    @Test
+    void shouldBeEqualToTenRupeeWhenSevenAndThreeRupeesAreGiven() {
+        Rupee tenRupee = new Rupee(10);
+        Rupee sevenRupee = new Rupee(7);
+        Rupee threeRupee = new Rupee(3);
+
+        Rupee actualResult = sevenRupee.add(threeRupee);
+        assertEquals(tenRupee, actualResult);
+    }
 }

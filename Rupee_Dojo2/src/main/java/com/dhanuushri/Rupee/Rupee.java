@@ -17,4 +17,7 @@ public class Rupee {
         return this.value == newValue.value;
     }
 
+    public Rupee add(Rupee newRupee) {
+        return new Rupee((int) (this.value + newRupee.value));
+    }
 }
