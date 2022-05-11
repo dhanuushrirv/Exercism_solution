@@ -1,4 +1,4 @@
-package com.thoughtworks.Rupee;
+package com.dhanuushri.Rupee;
 
 
 public class Rupee {

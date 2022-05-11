@@ -1,4 +1,4 @@
-import com.thoughtworks.Rupee.Rupee;
+import com.dhanuushri.Rupee.Rupee;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
