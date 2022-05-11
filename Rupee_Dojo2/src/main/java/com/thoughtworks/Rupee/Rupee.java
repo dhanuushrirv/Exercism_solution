@@ -11,7 +11,9 @@ public class Rupee {
 
     @Override
     public boolean equals(Object obj) {
-        Rupee newValue= (Rupee) obj;
+
+        Rupee newValue = (Rupee) obj;
         return this.value == newValue.value;
     }
+
 }

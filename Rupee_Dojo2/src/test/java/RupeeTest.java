@@ -1,8 +1,7 @@
 import com.thoughtworks.Rupee.Rupee;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotSame;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class RupeeTest {
     @Test
@@ -10,7 +9,7 @@ public class RupeeTest {
         Rupee tenRupee = new Rupee(10);
         Rupee anotherTenRupee = new Rupee(10);
 
-        assertNotSame(tenRupee,anotherTenRupee);
+        assertNotSame(tenRupee, anotherTenRupee);
     }
 
     @Test
@@ -18,7 +17,14 @@ public class RupeeTest {
         Rupee tenRupee = new Rupee(10);
         Rupee anotherTenRupee = new Rupee(10);
 
-        assertEquals(tenRupee,anotherTenRupee);
+        assertEquals(tenRupee, anotherTenRupee);
+    }
 
+    @Test
+    void shouldNotBeEqualToTenRupeeWhenTenAndFiveRupeesAreGiven() {
+        Rupee tenRupee = new Rupee(10);
+        Rupee anotherTenRupee = new Rupee(5);
+
+        assertNotEquals(tenRupee,anotherTenRupee);
     }
 }
