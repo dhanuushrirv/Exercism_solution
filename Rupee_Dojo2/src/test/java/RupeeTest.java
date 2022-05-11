@@ -34,4 +34,12 @@ public class RupeeTest {
 
         assertNotEquals(tenRupee, null);
     }
+
+    @Test
+    void shouldNotBeEqualToTenRupeesWhenComparedWithDifferentObjects() {
+        Rupee tenRupee = new Rupee(10);
+
+        assertNotEquals(tenRupee,Integer.valueOf(7));
+    }
+
 }
